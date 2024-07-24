@@ -1,0 +1,124 @@
+#container{
+    display: grid;
+    grid-template-areas: "titulo      titulo"
+                         "informacoes fotos";
+    grid-template-columns: 50% 100%;
+    grid-template-rows: 15vh 180vh;
+    grid-gap: 4px;
+}
+
+#titulo{
+    grid-area: titulo;
+    background-color: #ff45ab;
+}
+
+#informacoes{
+    grid-area: informacoes;
+    display: grid;
+    grid-template-areas: "info1"
+                         "info2"
+                         "info3"
+                         "info4"
+                         "info5"
+                         "info6";
+    grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh;
+    grid-template-columns: 1fr;
+    grid-gap: 3px;
+}
+
+#info1{
+    grid-area: info1;
+    background-color: #af78b9;
+}
+#info2{
+    grid-area: info2;
+    background-color: #b17fbb;
+}
+#info3{
+    grid-area: info3;
+    background-color: #bd8bc7;
+}
+#info4{
+    grid-area: info4;
+    background-color: #c18ccc;
+}
+#info5{
+    grid-area: info5;
+    background-color: #c38ece;
+}
+#info6{
+    grid-area: info6;
+    background-color: #b489bd;
+}
+
+#fotos{
+    grid-area: fotos;
+    display: grid;
+    grid-template-areas: "ftsfilme1"
+                         "ftsfilme2"
+                         "ftsfilme3"
+                         "ftsfilme4"
+                         "ftsfilme5"
+                         "ftsfilme6";
+    grid-template-rows: 30vh 30vh 30vh 30vh 30vh 30vh;
+    grid-template-columns: 50%;
+    grid-gap: 3px;
+}
+
+#ftsfilme1{
+    grid-area: ftsfilme1;
+    background-color: #8f8f8f;
+}
+#ftsfilme2{
+    grid-area: ftsfilme2;
+    background-color: #8d8d8d;
+}
+#ftsfilme3{
+    grid-area: ftsfilme3;
+    background-color: #858585;
+}
+#ftsfilme4{
+    grid-area: ftsfilme4;
+    background-color: #727272;
+}
+
+.imgpag3{
+    width: 250px;
+    height: 180px;
+}
+
+.botao{
+    border-radius: 50%;
+    background: #4d3030;
+    color: #edf1b2;
+}
+
+@media screen and (min-width: 600px){
+   #container{
+    display: grid;
+    grid-template-areas: "titulo"
+                         "informacoes"
+                         "fotos";
+    grid-template-columns: 300%;
+    grid-template-rows: 15vh 30vh 90vh;
+    grid-gap: 3px;
+   } 
+
+   #informacoes{
+    grid-area: informacoes;
+    display: grid;
+    grid-template-areas: "info1 info2 info3 info4 info5 info6";
+    grid-template-rows: 30vh;
+    grid-template-columns: 50%;
+    grid-gap: 3px;
+   }
+
+   #fotos{
+    grid-area: fotos;
+    display: grid;
+    grid-template-areas: "ftsfilme1 ftsfilme2 ftsfilme3 ftsfilme4 ftsfilme5 ftsfilme6";
+    grid-template-rows: 90vh;
+    grid-template-columns: 4fr;
+    grid-gap: 3px;
+}
+}

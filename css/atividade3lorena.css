@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  display: grid;
+  grid-template-areas: "titulo"
+                       "fotos"
+                       "texto";
+  grid-template-rows: 15vh 50vh 60vh;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+#titulo {
+  grid-area: titulo;
+  background-color: #34103d;
+}
+#title{
+  font-size: large;
+  color: #ca71c9;
+  text-align: center;
+}
+
+#fotos {
+  grid-area: fotos;
+  display: grid;
+  grid-template-areas: "f1 f2"
+    "f3 f4";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25vh 25vh;
+  grid-gap: 5px;
+}
+
+#f1 {
+  grid-area: f1;
+  background-color: #d184cb;
+}
+
+#f2 {
+  grid-area: f2;
+  background-color: #ca71c9;
+}
+
+#f3 {
+  grid-area: f3;
+  background-color: #ca71c9;
+}
+
+#f4 {
+  grid-area: f4;
+  background-color: #ca71c9;
+}
+#whoopi1{
+  width: 155px;
+  height: 155px;
+}
+#whoopi2{
+  width: 100px;
+  height: 155px;
+}
+#whoopi3{
+  width: 150px;
+  height: 155px;
+}
+#whoopi4{
+  width: 140px;
+  height: 155px;
+}
+#texto {
+  display: grid;
+  grid-template-areas: "t1"
+    "t2"
+    "t3"
+    "t4";
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 15vh 15vh 15vh;
+  grid-gap: 5px;
+}
+
+#t1 {
+  grid-area: t1;
+  background-color: #c77ad1;
+}
+
+#t2 {
+  grid-area: t2;
+  background-color: #c77ad1;
+}
+
+#t3 {
+  grid-area: t3;
+  background-color: #c77ad1;
+}
+
+#t4 {
+  grid-area: t4;
+  background-color: #c77ad1;
+}
+.botao{
+  border-radius: 50%;
+  background: #4d3030;
+  color: #edf1b2;
+}
+
+@media screen and (min-width: 600px) {
+
+
+  #container {
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "fotos  texto";
+    grid-template-rows: 20vh 80vh;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  #titulo {
+    grid-area: titulo;
+    background-color: #2b292e;
+  }
+  #title{
+    font-size: xx-large;
+  }
+
+  #fotos {
+    grid-area: fotos;
+    display: grid;
+    grid-template-areas: "f1"
+                         "f2"
+                         "f3"
+                         "f4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 22vh 22vh 22vh 22vh;
+    grid-gap: 5px;
+  }
+
+  #texto {
+
+    display: grid;
+    grid-template-areas: "t1"
+                         "t2"
+                         "t3"
+                         "t4";
+    grid-template-columns: 1fr;
+    grid-template-rows: 22vh 22vh 22vh 22vh;
+    grid-gap: 5px;
+  }
+
+}

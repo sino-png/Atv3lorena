@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 1px;
+}
+#container{
+    display: grid;
+    grid-template-areas:"titulo"
+                        "producoes" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 180vh;
+    grid-gap: 1px;
+}
+#titulo{
+    grid-area: titulo;
+    background-color: #b728ca;
+}
+
+#producoes{
+    grid-area: producoes;
+    background-color: #d991e7;
+}
+
+.botao{
+    border-radius: 10%;
+    padding: 2px;
+    background: #4d3030;
+    color: #ddbd81;
+}
+
+@media screen and (min-width: 600px) {
+    
+    #container{
+        display: grid;
+        grid-template-areas:"titulo"
+                            "producoes" ;
+        grid-template-columns: 4fr;
+        grid-template-rows: 15vh 80vh;
+        grid-gap: 5px;
+    }
+
+    #producoes{
+        display: grid;
+        grid-area: producoes;
+        grid-template-areas: "prod1 prod2 prod3 prod4";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 80vh;
+        grid-gap: 5px;
+}
+    #prod1{
+        grid-area: prod1;
+    }
+    #prod2{
+        grid-area: prod2;
+    }
+    #prod3{
+        grid-area: prod3;
+    }
+    #prod4{
+        grid-area: prod4;
+    }
+}
+
